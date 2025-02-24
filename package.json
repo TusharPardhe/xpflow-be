@@ -1,0 +1,26 @@
+{
+    "name": "wallet-integration-app",
+    "version": "1.0.0",
+    "description": "Wallet integration application for XRPL",
+    "main": "app.js",
+    "scripts": {
+        "dev": "nodemon src/app.js",
+        "prod": "pm2 start src/app.js --name wallet-integration-app"
+    },
+    "dependencies": {
+        "@prisma/client": "^6.2.1",
+        "cors": "^2.8.5",
+        "crypto": "^1.0.1",
+        "dotenv": "^16.3.1",
+        "express": "^4.18.2",
+        "jsonwebtoken": "^9.0.2",
+        "pm2": "^5.4.3",
+        "ripple-keypairs": "^1.3.1",
+        "verify-xrpl-signature": "^0.5.1",
+        "xrpl": "^4.1.0",
+        "xumm-sdk": "^1.9.1"
+    },
+    "devDependencies": {
+        "nodemon": "^3.1.9"
+    }
+}
